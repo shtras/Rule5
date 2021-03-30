@@ -84,6 +84,9 @@
         "Dockerfile_*": "dockerfile",
         "Dockerfile-*": "dockerfile",
         "numeric": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "__errc": "cpp",
+        "__node_handle": "cpp",
+        "bit": "cpp"
     }
 }
