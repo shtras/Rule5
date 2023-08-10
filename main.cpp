@@ -34,12 +34,12 @@ public:
         }
         return *this;
     }
-    R5(R5&& rhs)
+    R5(R5&& rhs) noexcept
         : a_(std::move(rhs.a_))
     {
         std::cout << "R5(R5&&)\n";
     }
-    R5& operator=(R5&& rhs)
+    R5& operator=(R5&& rhs) noexcept
     {
         std::cout << "R5=(R5&&)\n";
         std::swap(a_, rhs.a_);
